@@ -1,0 +1,78 @@
+<html>
+
+    <head>
+        <title>Weight Converter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        
+        <div class="container">
+    
+            <div class="row">
+            
+                <div class="col-md-6 offset-md-3">
+                
+                    <h1 class="display-4 text-center">Weight Converter</h1>
+                    
+                    <form>
+                    
+                        <div class="form-group">
+                            <select id="target" class="form-control form-control-lg">
+                            
+                                <option hidden>Click here for options..</option>
+                                <option>Enter the value in Pounds</option>
+                                <option>Enter the value in Kilograms</option>
+                                <option>Enter the value in Ounces</option>
+                                <option>Enter the value in Grams</option>
+                            
+                            </select>
+                            <input id="myInput" type="text" class="form-control form-control-lg" placeholder="Enter the value...">
+                        </div> 
+                    
+                    </form>
+                    
+                    <div id="output">
+                    
+                        <div class="card">
+                            <div class="card-block card-primary">
+                                <h3>Kilograms</h3>
+                                <div id="kgOutput"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-block card-success">
+                                <h3>Grams<h3>
+                                <div id="gramsOutput"></div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-block card-danger">
+                                <h3>Ounces</h3>
+                                <div id="ouncesOutput"></div>
+                            </div>
+                        </div>
+                                
+                        <div class="card">
+                            <div class="card-block card-warning">
+                                <h3>Pounds</h3>
+                                <div id="poundsOutput"></div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+            
+        </div>
+        
+        <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
